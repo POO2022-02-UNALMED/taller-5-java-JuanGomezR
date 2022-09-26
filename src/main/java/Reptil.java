@@ -1,4 +1,5 @@
 package zooAnimales;
+import gestion.*;
 public class Reptil extends Animal{
     private static Reptil[] listado;
     public static int iguanas=0;

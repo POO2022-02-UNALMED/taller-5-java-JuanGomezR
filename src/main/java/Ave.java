@@ -1,4 +1,5 @@
 package zooAnimales;
+import gestion.*;
 public class Ave extends Animal{
     private static Ave[] listado;
     public static int halcones=0;

@@ -1,4 +1,5 @@
 package zooAnimales;
+import gestion.*;
 public class Mamifero extends Animal{
     private static Mamifero[] listado;
     public static int caballos=0;

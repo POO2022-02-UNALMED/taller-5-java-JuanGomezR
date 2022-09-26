@@ -1,4 +1,5 @@
 package zooAnimales;
+import gestion.*;
 public class Anfibio extends Animal{
     private static Reptil[] listado;
     public static int salamandras=0;

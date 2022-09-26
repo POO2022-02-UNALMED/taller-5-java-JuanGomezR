@@ -1,4 +1,5 @@
 package gestion;
+import zooAnimales.*;
 public class Zona{
     private String nombre;
     private Zoologico zoo;
@@ -23,7 +24,7 @@ public class Zona{
     public String getNombre(){
         return this.nombre;
     }
-    public String getZoo(){
+    public Zoologico getZoo(){
         return this.zoo;
     }
     public Animal[] getAnimales(){
