@@ -8,14 +8,14 @@ public class Animal{
     String habitat;
     String genero;
     Zona zona;
-    Animal (String nombre, int edad, String habitat, String genero){
+    public Animal (String nombre, int edad, String habitat, String genero){
         this.nombre=nombre;
         this.edad=edad;
         this.habitat=habitat;
         this.genero=genero;
         totalAnimales+=1;
     } 
-    Animal (String nombre, int edad, String habitat, String genero, Zona zona){
+    public Animal (String nombre, int edad, String habitat, String genero, Zona zona){
         this.nombre=nombre;
         this.edad=edad;
         this.habitat=habitat;
@@ -23,7 +23,7 @@ public class Animal{
         this.zona=zona;
         totalAnimales+=1;
     } 
-    Animal(){
+    public Animal(){
         totalAnimales+=1;
     }
     public String movimiento(){

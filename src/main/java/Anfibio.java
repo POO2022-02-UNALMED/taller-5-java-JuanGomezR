@@ -32,15 +32,21 @@ public class Anfibio extends Animal{
     public static int cantidadAnfibios(){
         return Anfibio.listado.size();
     }
-    public void crearRana(String nombre, int edad, String genero){
+    public static void crearRana(String nombre, int edad, String genero){
         new Anfibio(nombre, edad, "selva", genero, "rojo", true);
         ranas+=1;
     }
-    public void crearSalamandra(String nombre, int edad, String genero){
+    public static void crearSalamandra(String nombre, int edad, String genero){
         new Anfibio(nombre, edad, "selva", genero, "negro y amarillo", false);
         salamandras+=1;
     }
     public String movimiento(){
         return "saltar";
+    }
+    public String getColorPiel(){
+        return this.colorPiel;
+    }
+    public boolean isVenenoso(){
+        return this.venenoso;
     }
 }

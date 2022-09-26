@@ -29,15 +29,18 @@ public class Ave extends Animal{
     public static int cantidadAves(){
         return Ave.listado.size();
     }
-    public void crearHalcon(String nombre, int edad, String genero){
+    public static void crearHalcon(String nombre, int edad, String genero){
         new Ave(nombre, edad, "montana", genero, "cafe glorioso");
         halcones+=1;
     }
-    public void crearAguila(String nombre, int edad, String genero){
+    public static void crearAguila(String nombre, int edad, String genero){
         new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
         aguilas+=1;
     }
     public String movimiento(){
         return "volar";
+    }
+    public String getColorPlumas(){
+        return this.colorPlumas;
     }
 }
