@@ -77,7 +77,3 @@ public class Animal{
         this.zona=zona;
     }
 }
-public static void main() {
-    Ave an2 = new Ave("paloma", 5, "ciudad", "F", "gris");
-    System.out.println(an2.toString())
-}
