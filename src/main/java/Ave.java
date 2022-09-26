@@ -1,6 +1,6 @@
 package zooAnimales;
 public class Ave extends Animal{
-    private static Ave[] listado=[];
+    private static Ave[] listado;
     public static int halcones=0;
     public static int aguilas=0;
     private String colorPlumas;

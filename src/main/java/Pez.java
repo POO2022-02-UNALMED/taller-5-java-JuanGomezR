@@ -1,6 +1,6 @@
 package zooAnimales;
 public class Pez extends Animal{
-    private static Reptil[] listado=[];
+    private static Reptil[] listado;
     public static int iguanas=0;
     public static int serpientes=0;
     private String colorEscamas;

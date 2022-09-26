@@ -1,6 +1,6 @@
 package zooAnimales;
 public class Mamifero extends Animal{
-    private static Mamifero[] listado=[];
+    private static Mamifero[] listado;
     public static int caballos=0;
     public static int leones=0;
     private boolean pelaje;

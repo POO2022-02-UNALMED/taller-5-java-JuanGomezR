@@ -22,7 +22,7 @@ public class Animal{
         totalAnimales+=1;
     } 
     Animal(){
-        totalAnimales+=1
+        totalAnimales+=1;
     }
     public String movimiento(){
         return "desplazarse";
@@ -53,7 +53,7 @@ public class Animal{
     public String getGenero(){
         return this.genero;
     }
-    public Zona[0,1] getZona(){
+    public Zona getZona(){
         return this.zona;
     }
     public void setNombre(String nombre){
@@ -68,7 +68,7 @@ public class Animal{
     public void setGenero(String genero){
         this.genero=genero;
     }
-    public void setZona(Zona[0,1] zona){
+    public void setZona(Zona zona){
         this.zona=zona;
     }
 }

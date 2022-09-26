@@ -1,6 +1,6 @@
 package zooAnimales;
 public class Anfibio extends Animal{
-    private static Reptil[] listado=[];
+    private static Reptil[] listado;
     public static int salamandras=0;
     public static int ranas=0;
     private String colorPiel;

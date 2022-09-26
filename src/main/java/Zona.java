@@ -32,7 +32,7 @@ public class Zona{
     public void setNombre(String nombre){
         this.nombre=nombre;
     }
-    public void setZoo(Zoologico[1] zoo){
+    public void setZoo(Zoologico zoo){
         this.zoo=zoo;
     }
     public void setAnimales(Animal[] animales){
