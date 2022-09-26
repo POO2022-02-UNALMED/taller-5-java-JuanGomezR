@@ -14,22 +14,22 @@ public class Pez extends Animal{
         this.genero=genero;
         this.colorEscamas=colorEscamas;
         this.cantidadAletas=cantidadAletas;
-        Pez.listado.append(this);
+        Pez.listado.add(this);
     }
     Pez(String nombre, int edad, String habitat, String genero, Zona zona, String colorEscamas, int cantidadAletas){
         this.nombre=nombre;
         this.edad=edad;
         this.habitat=habitat;
         this.genero=genero;
-        this.Zona=zona;
+        this.zona=zona;
         this.colorEscamas=colorEscamas;
         this.cantidadAletas=cantidadAletas;
-        Pez.listado.append(this);
+        Pez.listado.add(this);
     }
     Pez(){
-        Pez.listado.append(this);
+        Pez.listado.add(this);
     }
-    public int cantidadPeces(){
+    public static int cantidadPeces(){
         return Pez.listado.size();
     }
     public void crearSalmon(String nombre, int edad, String genero){

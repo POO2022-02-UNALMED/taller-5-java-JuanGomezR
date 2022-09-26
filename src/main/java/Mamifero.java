@@ -14,22 +14,22 @@ public class Mamifero extends Animal{
         this.genero=genero;
         this.pelaje=pelaje;
         this.patas=patas;
-        Mamifero.listado.append(this);
+        Mamifero.listado.add(this);
     }
     Mamifero(String nombre, int edad, String habitat, String genero, Zona zona, boolean pelaje, int patas){
         this.nombre=nombre;
         this.edad=edad;
         this.habitat=habitat;
         this.genero=genero;
-        this.Zona=zona;
+        this.zona=zona;
         this.pelaje=pelaje;
         this.patas=patas;
-        Mamifero.listado.append(this);
+        Mamifero.listado.add(this);
     }
     Mamifero(){
-        Mamifero.listado.append(this);
+        Mamifero.listado.add(this);
     }
-    public int cantidadMamiferos(){
+    public static int cantidadMamiferos(){
         return Mamifero.listado.size();
     }
     public void crearCaballo(String nombre, int edad, String genero){
