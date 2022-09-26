@@ -30,16 +30,16 @@ public class Animal{
         return "desplazarse";
     }
     public static String totalPorTipo(){
-        String totalTipo="mamiferos: "+ Mamifero.cantidadMamiferos()+ "\n"+"Aves: "+ Ave.cantidadAves()+"\n"+"Reptiles: "+ Reptil.cantidadReptiles()+ "\n"+ "Peces: "+ Pez.cantidadPeces()+ "\n"+ "Anfibios: "+ Anfibio.cantidadAnfibios();
+        String totalTipo="Mamiferos: "+ Mamifero.cantidadMamiferos()+ "\n"+"Aves: "+ Ave.cantidadAves()+"\n"+"Reptiles: "+ Reptil.cantidadReptiles()+ "\n"+ "Peces: "+ Pez.cantidadPeces()+ "\n"+ "Anfibios: "+ Anfibio.cantidadAnfibios();
         return totalTipo;
     }
     public String toString(){
-        if (zona==null){
-            String retorno=("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ "y mi genero es "+ this.genero);
+        if (zona==none){
+            String retorno=("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ " y mi genero es "+ this.genero);
             return retorno;
         }
         else{
-            String retorno=("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ "y mi genero es "+ this.genero+ ", la zona en la que me ubico es "+ this.zona+ ", en el "+ this.zona.zoo);
+            String retorno=("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ " y mi genero es "+ this.genero+ ", la zona en la que me ubico es "+ this.zona+ ", en el "+ this.zona.zoo);
             return retorno;
         }
     }
@@ -76,4 +76,8 @@ public class Animal{
     public void setZona(Zona zona){
         this.zona=zona;
     }
+}
+public static void main() {
+    Ave an2 = new Ave("paloma", 5, "ciudad", "F", "gris");
+    System.out.println(an2.toString())
 }
