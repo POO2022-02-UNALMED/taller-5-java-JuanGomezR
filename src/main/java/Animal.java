@@ -29,7 +29,7 @@ public class Animal{
     public String movimiento(){
         return "desplazarse";
     }
-    public String totalPorTipo(){
+    public static String totalPorTipo(){
         String totalTipo="mamiferos: "+ Mamifero.cantidadMamiferos()+ "\n"+"Aves: "+ Ave.cantidadAves()+"\n"+"Reptiles: "+ Reptil.cantidadReptiles()+ "\n"+ "Peces: "+ Pez.cantidadPeces()+ "\n"+ "Anfibios: "+ Anfibio.cantidadAnfibios();
         return totalTipo;
     }

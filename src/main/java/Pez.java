@@ -32,13 +32,15 @@ public class Pez extends Animal{
     public static int cantidadPeces(){
         return Pez.listado.size();
     }
-    public static void crearSalmon(String nombre, int edad, String genero){
-        new Pez(nombre, edad, "oceano", genero, "rojo", 6);
+    public static Pez crearSalmon(String nombre, int edad, String genero){
+        Pez pez= new Pez(nombre, edad, "oceano", genero, "rojo", 6);
         salmones+=1;
+        return pez;
     }
     public static void crearBacalao(String nombre, int edad, String genero){
-        new Pez(nombre, edad, "oceano", genero, "gris", 6);
+        Pez pez= new Pez(nombre, edad, "oceano", genero, "gris", 6);
         bacalaos+=1;
+        return pez;
     }
     public String movimiento(){
         return "nadar";
