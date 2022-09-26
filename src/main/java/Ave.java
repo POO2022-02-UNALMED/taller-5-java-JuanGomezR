@@ -26,7 +26,7 @@ public class Ave extends Animal{
         listado.append(this);
     }
     public int cantidadAves(){
-        return listado.lenght;
+        return listado.lenght();
     }
     public void crearHalcon(String nombre, int edad, String genero){
         Ave(nombre, edad, "montana", genero, "cafe glorioso");

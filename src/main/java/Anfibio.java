@@ -29,7 +29,7 @@ public class Anfibio extends Animal{
         listado.append(this);
     }
     public int cantidadAnfibios(){
-        return listado.lenght;
+        return listado.lenght();
     }
     public void crearRana(String nombre, int edad, String genero){
         Anfibio(nombre, edad, "selva", genero, "rojo", true);

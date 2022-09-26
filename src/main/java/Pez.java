@@ -29,7 +29,7 @@ public class Pez extends Animal{
         listado.append(this);
     }
     public int cantidadPeces(){
-        return listado.lenght;
+        return listado.lenght();
     }
     public void crearSalmon(String nombre, int edad, String genero){
         Pez(nombre, edad, "oceano", genero, "rojo", 6);

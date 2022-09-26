@@ -29,14 +29,14 @@ public class Animal{
         return "desplazarse";
     }
     public void totalPorTipo(){
-        system.out.println("mamiferos: "+ Mamiferos.cantidadMamiferos()+ "\n"+"Aves: "+ Aves.cantidadAves()+"\n"+"Reptiles: "+ Reptil.cantidadReptiles()+ "\n"+ "Peces: "+ Pez.cantidadPeces()+ "\n"+ "Anfibios: "+ Anfibio.cantidadAnfibios());
+        system.out.println("mamiferos: "+ Mamifero.cantidadMamiferos()+ "\n"+"Aves: "+ Ave.cantidadAves()+"\n"+"Reptiles: "+ Reptil.cantidadReptiles()+ "\n"+ "Peces: "+ Pez.cantidadPeces()+ "\n"+ "Anfibios: "+ Anfibio.cantidadAnfibios());
     }
-    private void toString(){
+    public void toString(){
         if (zona==null){
             system.out.println("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ "y mi genero es "+ this.genero);
         }
         else{
-            system.out.println("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ "y mi genero es "+ this.genero+ ", la zona en la que me ubico es "+ this.zona+ ", en el "+ this.zoo);
+            system.out.println("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ "y mi genero es "+ this.genero+ ", la zona en la que me ubico es "+ this.zona+ ", en el "+ this.zona.zoo);
         }
     }
     public int getTotalAnimales(){

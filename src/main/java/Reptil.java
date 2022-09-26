@@ -29,7 +29,7 @@ public class Reptil extends Animal{
         listado.append(this);
     }
     public int cantidadReptiles(){
-        return listado.lenght;
+        return listado.lenght();
     }
     public void crearIguana(String nombre, int edad, String genero){
         Reptil(nombre, edad, "humedal", genero, "verde", 3);

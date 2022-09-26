@@ -1,5 +1,5 @@
 package gestion;
-import zooAnimales.*;
+import zooAnimales.Animal;
 public class Zoologico{
     private String nombre;
     private String ubicacion;
@@ -19,10 +19,7 @@ public class Zoologico{
         this.zonas.append(zona);
     }
     public int cantidadTotalAnimales(){
-        total=0;
-        for (int i=0; i<zonas.lenght(); i++){
-            total+=zonas[i].cantidadAnimales;
-        }
+        total=zonas.cantidadAnimales;
         return total;
     }
     public String getNombre(){
