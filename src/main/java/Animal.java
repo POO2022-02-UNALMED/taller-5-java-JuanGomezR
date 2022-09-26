@@ -1,5 +1,6 @@
 package zooAnimales;
-import gestion.*;
+import gestion.Zona;
+import gestion.Zoologico;
 public class Animal{
     static int totalAnimales=0;
     String nombre;
@@ -29,7 +30,8 @@ public class Animal{
         return "desplazarse";
     }
     public void totalPorTipo(){
-        System.out.println("mamiferos: "+ cantidadMamiferos()+ "\n"+"Aves: "+ cantidadAves()+"\n"+"Reptiles: "+ cantidadReptiles()+ "\n"+ "Peces: "+ cantidadPeces()+ "\n"+ "Anfibios: "+ cantidadAnfibios());
+        String totalTipo="mamiferos: "+ Mamifero.cantidadMamiferos()+ "\n"+"Aves: "+ Ave.cantidadAves()+"\n"+"Reptiles: "+ Reptil.cantidadReptiles()+ "\n"+ "Peces: "+ Pez.cantidadPeces()+ "\n"+ "Anfibios: "+ Anfibio.cantidadAnfibios();
+        return totalTipo;
     }
     public String toString(){
         if (zona==null){
