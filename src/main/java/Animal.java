@@ -34,7 +34,7 @@ public class Animal{
         return totalTipo;
     }
     public String toString(){
-        if (zona==none){
+        if (zona==null){
             String retorno=("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ " y mi genero es "+ this.genero);
             return retorno;
         }
