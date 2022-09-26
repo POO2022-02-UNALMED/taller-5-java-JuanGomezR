@@ -28,7 +28,7 @@ public class Animal{
         return "desplazarse";
     }
     public void totalPorTipo(){
-        system.out.println("mamiferos: "+ Mamiferos.cantidadMamiferos()+ "\n"+"Aves: "+ Aves.cantidadAves()+"\n"+"Reptiles: "+ Reptil.cantidadReptiles()+ "\n"+ "Peces: "+ Pez.cantidadPeces()+ "\n"+ "Anfibios: "+ Anfibio.cantidadAnfibios())
+        system.out.println("mamiferos: "+ Mamiferos.cantidadMamiferos()+ "\n"+"Aves: "+ Aves.cantidadAves()+"\n"+"Reptiles: "+ Reptil.cantidadReptiles()+ "\n"+ "Peces: "+ Pez.cantidadPeces()+ "\n"+ "Anfibios: "+ Anfibio.cantidadAnfibios());
     }
     private void toString(){
         if (zona==null){
