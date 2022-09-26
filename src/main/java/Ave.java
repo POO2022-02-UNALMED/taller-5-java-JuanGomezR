@@ -11,7 +11,7 @@ public class Ave extends Animal{
         this.habitat=habitat;
         this.genero=genero;
         this.colorPlumas=colorPlumas;
-        listado.append(this);
+        listado.add(this);
     }
     Ave(String nombre, int edad, String habitat, String genero, Zona zona, String colorPlumas){
         this.nombre=nombre;
@@ -20,13 +20,13 @@ public class Ave extends Animal{
         this.genero=genero;
         this.Zona=zona;
         this.colorPlumas=colorPlumas;
-        listado.append(this);
+        listado.add(this);
     }
     Ave(){
-        listado.append(this);
+        listado.add(this);
     }
-    public int cantidadAves(){
-        return listado.lenght();
+    public static int cantidadAves(){
+        return listado.size();
     }
     public void crearHalcon(String nombre, int edad, String genero){
         Ave(nombre, edad, "montana", genero, "cafe glorioso");

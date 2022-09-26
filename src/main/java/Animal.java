@@ -29,14 +29,14 @@ public class Animal{
         return "desplazarse";
     }
     public void totalPorTipo(){
-        system.out.println("mamiferos: "+ Mamifero.cantidadMamiferos()+ "\n"+"Aves: "+ Ave.cantidadAves()+"\n"+"Reptiles: "+ Reptil.cantidadReptiles()+ "\n"+ "Peces: "+ Pez.cantidadPeces()+ "\n"+ "Anfibios: "+ Anfibio.cantidadAnfibios());
+        System.out.println("mamiferos: "+ cantidadMamiferos()+ "\n"+"Aves: "+ cantidadAves()+"\n"+"Reptiles: "+ cantidadReptiles()+ "\n"+ "Peces: "+ cantidadPeces()+ "\n"+ "Anfibios: "+ cantidadAnfibios());
     }
-    public void toString(){
+    public String toString(){
         if (zona==null){
-            system.out.println("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ "y mi genero es "+ this.genero);
+            System.out.println("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ "y mi genero es "+ this.genero);
         }
         else{
-            system.out.println("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ "y mi genero es "+ this.genero+ ", la zona en la que me ubico es "+ this.zona+ ", en el "+ this.zona.zoo);
+            System.out.println("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ "y mi genero es "+ this.genero+ ", la zona en la que me ubico es "+ this.zona+ ", en el "+ this.zona.zoo);
         }
     }
     public int getTotalAnimales(){

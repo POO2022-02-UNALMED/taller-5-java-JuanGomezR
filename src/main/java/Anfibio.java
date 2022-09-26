@@ -13,7 +13,7 @@ public class Anfibio extends Animal{
         this.genero=genero;
         this.colorPiel=colorPiel;
         this.venenoso=venenoso;
-        listado.append(this);
+        listado.add(this);
     }
     Anfibio(String nombre, int edad, String habitat, String genero, Zona zona, String colorPiel, boolean venenoso){
         this.nombre=nombre;
@@ -23,13 +23,13 @@ public class Anfibio extends Animal{
         this.Zona=zona;
         this.colorPiel=colorPiel;
         this.venenoso=venenoso;
-        listado.append(this);
+        listado.add(this);
     }
     Anfibio(){
-        listado.append(this);
+        listado.add(this);
     }
-    public int cantidadAnfibios(){
-        return listado.lenght();
+    public static int cantidadAnfibios(){
+        return listado.size();
     }
     public void crearRana(String nombre, int edad, String genero){
         Anfibio(nombre, edad, "selva", genero, "rojo", true);

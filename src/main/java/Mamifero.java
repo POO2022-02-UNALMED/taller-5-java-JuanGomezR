@@ -13,7 +13,7 @@ public class Mamifero extends Animal{
         this.genero=genero;
         this.pelaje=pelaje;
         this.patas=patas;
-        listado.append(this);
+        listado.add(this);
     }
     Mamifero(String nombre, int edad, String habitat, String genero, Zona zona, boolean pelaje, int patas){
         this.nombre=nombre;
@@ -23,13 +23,13 @@ public class Mamifero extends Animal{
         this.Zona=zona;
         this.pelaje=pelaje;
         this.patas=patas;
-        listado.append(this);
+        listado.add(this);
     }
     Mamifero(){
-        listado.append(this);
+        listado.add(this);
     }
-    public int cantidadMamiferos(){
-        return listado.lenght();
+    public static int cantidadMamiferos(){
+        return listado.size();
     }
     public void crearCaballo(String nombre, int edad, String genero){
         Mamifero(nombre, edad, "pradera", genero, true, 4);

@@ -1,9 +1,9 @@
 package gestion;
 import zooAnimales.Animal;
 public class Zoologico{
-    private String nombre;
-    private String ubicacion;
-    private Zona zonas;
+    String nombre;
+    String ubicacion;
+    Zona zonas;
     Zoologico(String nombre, String ubicacion){
         this.nombre= nombre;
         this.ubicacion=ubicacion;
@@ -16,7 +16,7 @@ public class Zoologico{
     Zoologico(){
     }
     public void agregarZonas(Zona zona){
-        this.zonas.append(zona);
+        this.zonas.add(zona);
     }
     public int cantidadTotalAnimales(){
         total=zonas.cantidadAnimales;

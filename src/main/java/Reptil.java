@@ -13,7 +13,7 @@ public class Reptil extends Animal{
         this.genero=genero;
         this.colorEscamas=colorEscamas;
         this.largoCola=largoCola;
-        listado.append(this);
+        listado.add(this);
     }
     Reptil(String nombre, int edad, String habitat, String genero, Zona zona, String colorEscamas, int largoCola){
         this.nombre=nombre;
@@ -23,13 +23,13 @@ public class Reptil extends Animal{
         this.Zona=zona;
         this.colorEscamas=colorEscamas;
         this.largoCola=largoCola;
-        listado.append(this);
+        listado.add(this);
     }
     Reptil(){
-        listado.append(this);
+        listado.add(this);
     }
-    public int cantidadReptiles(){
-        return listado.lenght();
+    public static int cantidadReptiles(){
+        return listado.size();
     }
     public void crearIguana(String nombre, int edad, String genero){
         Reptil(nombre, edad, "humedal", genero, "verde", 3);

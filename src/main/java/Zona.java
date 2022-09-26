@@ -1,9 +1,9 @@
 package gestion;
 import zooAnimales.Animal;
 public class Zona{
-    private String nombre;
-    private Zoologico zoo;
-    private Animal[] animales;
+    String nombre;
+    Zoologico zoo;
+    Animal animales=new Animal[20];
     Zona(String nombre, Zoologico zoo){
         this.nombre=nombre;
         this.zoo=zoo;
@@ -16,10 +16,10 @@ public class Zona{
     Zona(){
     }
     public void agregarAnimales(Animal animal){
-        animales.append(animal);
+        animales.add(animal);
     }
     public int cantidadAnimales(){
-        return animales.lenght();
+        return animales.size();
     }
     public String getNombre(){
         return this.nombre;
@@ -27,7 +27,7 @@ public class Zona{
     public Zoologico getZoo(){
         return this.zoo;
     }
-    public Animal[] getAnimales(){
+    public Animal getAnimales(){
         return this.animales;
     }
     public void setNombre(String nombre){
