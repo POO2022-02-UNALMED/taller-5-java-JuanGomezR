@@ -40,7 +40,7 @@ public class Animal{
         else{
             String retorno=("Mi nombre es "+ this.nombre +", tengo una edad de "+ this.edad+ ", habito en "+ this.habitat+ "y mi genero es "+ this.genero+ ", la zona en la que me ubico es "+ this.zona+ ", en el "+ this.zona.zoo);
         }
-        return retorno
+        return retorno;
     }
     public int getTotalAnimales(){
         return totalAnimales;
