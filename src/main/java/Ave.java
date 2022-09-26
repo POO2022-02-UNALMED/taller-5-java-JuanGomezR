@@ -6,7 +6,7 @@ public class Ave extends Animal{
     public static int halcones=0;
     public static int aguilas=0;
     private String colorPlumas;
-    Ave(String nombre, int edad, String habitat, String genero, String colorPlumas){
+    public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas){
         this.nombre=nombre;
         this.edad=edad;
         this.habitat=habitat;
@@ -14,7 +14,7 @@ public class Ave extends Animal{
         this.colorPlumas=colorPlumas;
         Ave.listado.add(this);
     }
-    Ave(String nombre, int edad, String habitat, String genero, Zona zona, String colorPlumas){
+    public Ave(String nombre, int edad, String habitat, String genero, Zona zona, String colorPlumas){
         this.nombre=nombre;
         this.edad=edad;
         this.habitat=habitat;
@@ -23,7 +23,7 @@ public class Ave extends Animal{
         this.colorPlumas=colorPlumas;
         Ave.listado.add(this);
     }
-    Ave(){
+    public Ave(){
         Ave.listado.add(this);
     }
     public static int cantidadAves(){

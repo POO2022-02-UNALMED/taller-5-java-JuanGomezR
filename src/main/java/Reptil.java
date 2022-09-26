@@ -7,7 +7,7 @@ public class Reptil extends Animal{
     public static int serpientes=0;
     private String colorEscamas;
     private int largoCola;
-    Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola){
+    public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola){
         this.nombre=nombre;
         this.edad=edad;
         this.habitat=habitat;
@@ -16,7 +16,7 @@ public class Reptil extends Animal{
         this.largoCola=largoCola;
         Reptil.listado.add(this);
     }
-    Reptil(String nombre, int edad, String habitat, String genero, Zona zona, String colorEscamas, int largoCola){
+    public Reptil(String nombre, int edad, String habitat, String genero, Zona zona, String colorEscamas, int largoCola){
         this.nombre=nombre;
         this.edad=edad;
         this.habitat=habitat;
@@ -26,7 +26,7 @@ public class Reptil extends Animal{
         this.largoCola=largoCola;
         Reptil.listado.add(this);
     }
-    Reptil(){
+    public Reptil(){
         Reptil.listado.add(this);
     }
     public static int cantidadReptiles(){

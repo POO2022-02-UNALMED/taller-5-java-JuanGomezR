@@ -3,11 +3,11 @@ import gestion.*;
 import java.util.*;
 public class Pez extends Animal{
     private static ArrayList<Pez> listado=new ArrayList<>();
-    public static int iguanas=0;
-    public static int serpientes=0;
+    public static int salmones=0;
+    public static int bacalaos=0;
     private String colorEscamas;
     private int cantidadAletas;
-    Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas){
+    public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas){
         this.nombre=nombre;
         this.edad=edad;
         this.habitat=habitat;
@@ -16,7 +16,7 @@ public class Pez extends Animal{
         this.cantidadAletas=cantidadAletas;
         Pez.listado.add(this);
     }
-    Pez(String nombre, int edad, String habitat, String genero, Zona zona, String colorEscamas, int cantidadAletas){
+    public Pez(String nombre, int edad, String habitat, String genero, Zona zona, String colorEscamas, int cantidadAletas){
         this.nombre=nombre;
         this.edad=edad;
         this.habitat=habitat;
@@ -26,7 +26,7 @@ public class Pez extends Animal{
         this.cantidadAletas=cantidadAletas;
         Pez.listado.add(this);
     }
-    Pez(){
+    public Pez(){
         Pez.listado.add(this);
     }
     public static int cantidadPeces(){
