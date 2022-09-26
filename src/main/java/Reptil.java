@@ -37,7 +37,7 @@ public class Reptil extends Animal{
         iguanas+=1;
         return reptil;
     }
-    public static void crearSerpiente(String nombre, int edad, String genero){
+    public static Reptil crearSerpiente(String nombre, int edad, String genero){
         Reptil reptil= new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
         serpientes+=1;
         return reptil;
